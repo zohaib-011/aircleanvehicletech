@@ -47,8 +47,9 @@ return isAuthenticated ? element : <Navigate to="/login"/>
              
             <About/>   
 
-            <Technalogy/>
+            
             <Contact/> 
+            <Technalogy/>
             </div>
              
            
