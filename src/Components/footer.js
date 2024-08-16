@@ -20,23 +20,16 @@ return (
     <div>
      
    
-        <div className='footerContainer'>
-         <div className='navigationCont'>
-            <li ><a  href="/home">Home</a></li>
-            <li><a href="/contact">Contact us</a></li>
-         </div>
-         <div>
-            <li  >
-                Air Clean Vehicle Tech 2024 .All Rights Reserved
-            </li>
-         </div>
+         <div className='footerContainer'>  
+         
+        
           <div className='socialContainer'> <li>
             
                 <a href="https://www.instagram.com/aircleanvehicletech" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i> </a>
             </li>
             <li>
            
-                <a href="https://www.facebook.com/profile.php?id=61562537243335&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61562537243335&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"> <i style={{width: "20px"}} class="fa-brands fa-square-facebook"></i></a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/aircleanvehicle-tech-2185a6319utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> </a>
@@ -46,8 +39,14 @@ return (
                 <a href="https://youtube.com/@aircleanvehicletech?si=SAZSn5Gu3IqZxbg0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"  ></i> </a>
             </li>
             </div> 
+            <div>
+            <li  >
+            &copy;  Air Clean Vehicle Tech 2024 .All Rights Reserved
+            </li>
+         </div>
         </div>
-    </div>
+       
+      </div>  
 </>
 
 );
