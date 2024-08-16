@@ -459,9 +459,10 @@ div li , div li a{
   width: 20vw;
   justify-content: space-evenly;
 }
-.socialContainer{
+.socialContainer {
   display: flex;
-  
+  align-content: center;
+  padding-top: 4px;
   width: 70vw;
   justify-content: space-evenly;
 }
