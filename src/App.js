@@ -18,7 +18,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import React, { useState,Component  } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import RefreshHandler from './Components/RefreshHandler';
-import Teachnalogy from './Components/technalogy';
+import Technalogy from './Components/technalogy';
 function App() {
   const [isAuthenticated,setAuthenticated]=useState(false);
   const PrivateRouting=({element})=>{
@@ -47,7 +47,7 @@ return isAuthenticated ? element : <Navigate to="/login"/>
              
             <About/>   
 
-            <Teachnalogy/>
+            <Technalogy/>
             <Contact/> 
             </div>
              
@@ -65,13 +65,17 @@ return isAuthenticated ? element : <Navigate to="/login"/>
 
            
            <Route exact path="/contact" element={ 
+            <div>
          <Contact/>  
+         
+         </div>
           } />
            <Route exact path="/faqs" element={ 
          <Faqs/> 
           } />
            <Route exact path="/technalogy" element={ 
-         <Teachnalogy/>
+        <div> <Technalogy/>
+        </div>
           } />
 
 
