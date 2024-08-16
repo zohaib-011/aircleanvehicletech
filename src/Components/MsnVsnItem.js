@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
- 
+import { Link } from 'react-router-dom';
 
 export class MsnVsnItem extends Component {
     constructor(props) {
@@ -29,9 +29,9 @@ export class MsnVsnItem extends Component {
                             {isExpanded ? description : `${description.substring(0, maxLength)}${description.length > maxLength ? '...' : ''}`}
                         </p>
                         {description.length > maxLength && (
-                            <a href="#" onClick={this.toggleExpand} className="btn btn-primary">
+                            <Link to="" onClick={this.toggleExpand} className="btn btn-primary">
                                 {isExpanded ? 'Read Less' : 'Read More'}
-                            </a>
+                            </Link>
                         )}
                     </div>
                 </div>

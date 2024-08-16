@@ -1,46 +1,61 @@
-import React, { Component } from 'react'
-import App from '../App.css'; 
-export class Navbar extends Component {
-    render() {
-       return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-        <img src="/images/logo.png" width={50} alt="" /> 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+  // Corrected import path for CSS
+
+export class Navbar extends Component { 
+  handleFormSubmit = (event) => {
+    event.preventDefault();
+    // Implement your search logic here
+     
+    // You can also navigate to a search results page or perform a search action
+  };
+  render() {
+  
+    return (
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <img src="/images/logo.png" width={50} alt="Logo" />
+          <button 
+            className="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link  " aria-current="page" href="/home">Home</a>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/home">Home</Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About us</a>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">About Us</Link>
               </li>
-               
-              <li class="nav-item">
-                <a class="nav-link"  href='/product'>Product</a>
+              <li className="nav-item">
+                <Link className="nav-link" to="/product">Product</Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link  " href='/technalogy'>Technology</a>
+              <li className="nav-item">
+                <Link className="nav-link" to="/technology">Technology</Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link  "  href='/contact'>Contact us</a>
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">Contact Us</Link>
               </li>
-              <li class="nav-item">
-                <a class="nav-link  "  href='/faqs'>FAQS</a>
+              <li className="nav-item">
+                <Link className="nav-link" to="/faqs">FAQs</Link>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <form className="d-flex" role="search" onSubmit={this.handleFormSubmit}>
+              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
-      )
-    }
+    );
   }
-  
-  export default Navbar;
-  
+}
+
+export default Navbar;
