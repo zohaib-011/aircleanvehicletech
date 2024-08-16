@@ -3,8 +3,9 @@ import ReactorMessage from './ReactorMessage.js'
 const About=()=>{
 return (
     <>
-    <MissionVesion/>
     <ReactorMessage/>
+    <MissionVesion/>
+    
     </>
 )
 }
