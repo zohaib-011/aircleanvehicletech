@@ -35,6 +35,8 @@ return isAuthenticated ? element : <Navigate to="/login"/>
         <NavBar />
         <Routes>
          
+        <Route path="/" element={<Navigate to="/home" />} />
+
           <Route exact path="/home"  element={ 
             <div>
             <HeroSection/>
