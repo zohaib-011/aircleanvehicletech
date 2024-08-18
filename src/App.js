@@ -19,6 +19,7 @@ import React, { useState,Component  } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import RefreshHandler from './Components/RefreshHandler';
 import Technalogy from './Components/technalogy';
+import Product from './Components/product';
 function App() {
   const [isAuthenticated,setAuthenticated]=useState(false);
   const PrivateRouting=({element})=>{
@@ -58,6 +59,9 @@ return isAuthenticated ? element : <Navigate to="/login"/>
           
           <Route exact path="/about" element={ 
          <About/>  
+          } />
+           <Route exact path="/product" element={ 
+         <Product/>  
           } />
 
 <Route path='/login' element={<Login/>}/>

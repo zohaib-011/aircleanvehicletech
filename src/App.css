@@ -234,150 +234,24 @@ margin: 0;
 .active{
   background-color: white;
   color: black;
-}
-.scrollable-tab-container{
-  background-color: rgb(68, 148, 128);
-  max-width: 600px;
-  margin:16px auto;
-   border-radius: 4px;
-   overflow: hidden;
-   position: relative;
-}
-.scrollable-tab-container   li{
-  list-style: none;
-   
-}
-.scrollable-tab-container  ul{
-  display: flex;
-  gap: 16px;
-  padding: 12px 24px;
-  margin: 0px;
-  overflow-x: scroll;
- -ms-overflow-style:none;
-  scrollbar-width:none;
-
-}
-.scrollable-tab-container  a{
-  background-color:  white;
-  padding: 4px 24px;
-
-  border-radius: 4px;
-  white-space: nowrap;
-}
-.scrollable-tab-container img{
-  
-}
-.left-arrow , .right-arrow{
-position: absolute;
-padding: 0 10px;
-height: 100%;
-top: 0px;
-display: flex;
-}
-.sliderList li a{
-  color:rgb(68, 148, 128) ;
-}
-.right-arrow{
-  right: 0px;
-
-  justify-content:flex-end ;
-}
-.courseContainer{
-  display: flex;
-  justify-content: center;
-  align-content: center;
- 
-  width: 100%;
-  gap: 20px;
- flex-wrap: wrap;
-
- position: relative;
-}
-.moreCourse{
-  position: absolute;
-  bottom: 0;
-}
-.moreCourseRelative{
-  position: relative;
- 
-}
-.courseItem{
-  display: flex;
-  width: 200px;
-  flex-direction: column;
-  margin: 20px 0px;
-  border: 2px solid black;
-}
-.imagePriceCourse{
-  position: relative;
-}
-.price{
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  bottom: 0;
-   right: 0;
-}
-.teacherItem{
-  display: flex;
-  flex-direction: column;
- flex-wrap: wrap;
- margin: 30px 0px;
-}
-.teacherItemContainer{
- display: flex;
-  justify-content: center;
- flex-wrap: wrap;
- gap: 20px;
-}
+} 
 .reactorMessage{
   justify-content: space-evenly;
 }
 .reactorMessage .msgItem{
  width:60vw;
 }
-
-
-
-.eventItemContainer {
-  margin-top: 80px;
-  justify-content: center;
-   
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4px;
+#founderTitle{
+  font-weight: bolder;
+  background-color: #ddaf26;
   
-  gap: 20px; /* Add some gap between event items */
-}
-
-.eventItem {
-  display: flex;
-  flex-wrap: wrap;
-  width: 280px;
-  background-color: rgb(68, 148, 128);
-  color: white;
-  
-  flex-direction: column; /* Ensure vertical stacking within the item */
-  align-items: center; /* Center the content horizontally */
-  padding: 10px; /* Add some padding inside each event item */
-  box-sizing: border-box; /* Include padding in the width */
-}
-
-.eventItem img {
-  width: 270px;
-  margin: 0;
-  padding: 0;
-}
-
-.eventItem h5, 
-.eventItem p, 
-.eventItem li {
-  margin: 0; /* Reset margins */
-  padding: 0; /* Reset padding */
-  text-align: center; /* Center text content */
 }
 
 
+ 
+ 
+
+ 
 
 
 
@@ -385,15 +259,7 @@ display: flex;
 .contactItemContainer{
   padding: 10px;
 }
-#title{
-   
-  padding-top: 5px;
-  background-color: green;
-  text-align: start;
-  color: white;
-   height:30px
-   
-}
+ 
 .listContainer{
   justify-content: center;
   align-content: center;
@@ -451,9 +317,7 @@ background-color: #fed318;
 
 align-items: center;
 }
-div li , div li a{
-  color: green;
-}
+ 
 .navigationCont{
   display: flex;
   width: 20vw;
