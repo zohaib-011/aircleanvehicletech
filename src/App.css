@@ -40,6 +40,65 @@ a{
     transform: rotate(360deg);
   }
 }
+
+/* ImageSlider.css */
+.slider {
+  position: relative;
+  max-width: 100%; /* Ensures the slider adapts to the screen size */
+  margin: auto;
+  overflow: hidden; /* Ensures content stays within the container */
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+.slider-image {
+  width: 100%; /* Image adapts to the full width of the container */
+ /* max-height: 500px; /* Sets a maximum height */
+  object-fit: contain; /* Ensures the entire image is shown without cropping */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out; /* Smooth transition */
+}
+
 .container{
   width: 100vw;
   height: 100vh; 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import App from '../App.css'; 
+import ImageSliderLoader from './imageSliderLoader'
 export class Navbar extends Component {
     render() {
        return (
@@ -8,6 +9,8 @@ export class Navbar extends Component {
  <img src="/images/heroImg.jpg" alt="er" />
  
 </div>
+<ImageSliderLoader/>
+<div>Welcome to this place</div>
 {/* 
 <div className='heroForm heroItem'>
     <h4>Registry Requests</h4>
