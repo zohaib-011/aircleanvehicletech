@@ -29,7 +29,7 @@ export class MsnVsnItem extends Component {
                             {isExpanded ? description : `${description.substring(0, maxLength)}${description.length > maxLength ? '...' : ''}`}
                         </p>
                         {description.length > maxLength && (
-                            <Link to="" onClick={this.toggleExpand} className="btn btn-primary">
+                            <Link to="" onClick={this.toggleExpand} className="btn btn-primary" style={{backgroundColor:"#ddaf26",border:"none"}}>
                                 {isExpanded ? 'Read Less' : 'Read More'}
                             </Link>
                         )}

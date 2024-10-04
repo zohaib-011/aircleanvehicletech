@@ -6,11 +6,11 @@ export class Navbar extends Component {
        return (
         <div className='heroContainer'>
 <div className='heroItem'>
- <img src="/images/heroImg.jpg" alt="er" />
+ <img style={{height:"90vh"}} src="/images/heroImg.jpg"  alt="er" />
  
 </div>
 <ImageSliderLoader/>
-<div>Welcome to this place</div>
+ 
 {/* 
 <div className='heroForm heroItem'>
     <h4>Registry Requests</h4>

@@ -13,8 +13,8 @@ const ImageSliderLoader = () => {
     ];
 
     return (
-        <div>
-            <h1>Welcome to Our Website</h1>
+        <div id='imageLoader'>
+            
             <ImageSlider images={images} />
         </div>
     );

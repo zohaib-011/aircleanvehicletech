@@ -20,6 +20,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-ro
 import RefreshHandler from './Components/RefreshHandler';
 import Technalogy from './Components/technalogy';
 import Product from './Components/product';
+import { ContactUs } from './Components/contactUs';
 function App() {
   const [isAuthenticated,setAuthenticated]=useState(false);
   const PrivateRouting=({element})=>{
@@ -51,6 +52,7 @@ return isAuthenticated ? element : <Navigate to="/login"/>
             <Product/>
             <Contact/> 
             <Technalogy/>
+            <ContactUs/>
             </div>
              
            
@@ -87,6 +89,7 @@ return isAuthenticated ? element : <Navigate to="/login"/>
             
            
         </Routes>
+
         <Footer/>
         </Router>
          

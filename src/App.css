@@ -44,23 +44,57 @@ a{
 /* ImageSlider.css */
 .slider {
   position: relative;
-  max-width: 100%; /* Ensures the slider adapts to the screen size */
+  max-width: 100%; 
   margin: auto;
-  overflow: hidden; /* Ensures content stays within the container */
-  border-radius: 8px; /* Optional: for rounded corners */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*width: 100%;*/
+ /* height:100vw;*/
+  position: relative;
 }
 
 .slider-image {
-  width: 100%; /* Image adapts to the full width of the container */
- /* max-height: 500px; /* Sets a maximum height */
-  object-fit: contain; /* Ensures the entire image is shown without cropping */
+ width: 45vw;
+ /* height: 100vw;*/
+  object-fit: contain;
+  transition: all 0.5s ease;
+  z-index: 5;
+}
+
+.slider-side-image {
+  width: 20%;
+  height: 80%;
+  object-fit: contain;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 4;
+}
+
+.slider-side-image:hover {
+  opacity: 1;
+}
+
+.slider-side-image:active {
+  width: 50%;
+  z-index: 6;
 }
 
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #ddaf26;
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -81,22 +115,130 @@ a{
   right: 10px;
 }
 
-/* Progress Bar Styles */
-.progress-bar-container {
-  width: 100%;
+.slider-dot {
+  width: 10px;
   height: 10px;
-  background-color: #e0e0e0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: 5px;
+  margin: 0 5px;
+  display: flex;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
-
+.moving-slider{
+  display: flex;
+}
+.slider-dot.active {
+  background-color: #000;
+}
 .progress-bar {
   height: 100%;
   background-color: #4caf50;
   border-radius: 5px;
   transition: width 0.5s ease-in-out; /* Smooth transition */
+}
+#productImgDetail {
+  display: flex;
+  flex-wrap: wrap; /* This will make the sections wrap on smaller screens */
+  justify-content: space-between;
+  gap: 20px; /* Adds some space between the image and details */
+  margin: 20px;
+  text-align: left; /* Ensures overall text is aligned to the left */
+}
+
+.productImg {
+  flex: 1; /* This will take up available space */
+  max-width: 45%; /* Limits image width for larger screens */
+  min-width: 300px; /* Ensures a minimum width */
+  text-align: left; /* Ensures text (if any) in the image section is left-aligned */
+}
+
+.productDetail {
+  flex: 2; /* Allows more space for details */
+  max-width: 50%; /* Limits detail section width for larger screens */
+  min-width: 300px;
+  text-align: left; 
+  font-size: 25px;/* Text in product details will be left-aligned */
+  
+}
+
+@media (max-width: 768px) {
+  #productImgDetail {
+    flex-direction: column; /* Stacks the image and details on smaller screens */
+   /* align-items: left;*/
+  }
+
+  .productImg, .productDetail {
+    max-width: 100%; /* Full width on smaller screens */
+    text-align: left;
+    margin: 0;
+    padding: 0; /* Text remains left-aligned on smaller screens */
+  }
+
+  .productImg {
+    margin-bottom: 20px; /* Adds space between the image and details */
+  }
+  .productDetail{
+    font-size: 15px;
+  }
+  .heroItem img{
+    height: 50vh;
+  }
+}
+.contact-container {
+  max-width: 600px; /* Set a max width for the form */
+  margin: 50px auto; /* Center the form */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.contact-container h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-form {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+}
+
+label {
+  margin-bottom: 5px; /* Space below each label */
+  font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px; /* Inner padding */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded input fields */
+  margin-bottom: 15px; /* Space below input fields */
+  font-size: 14px; /* Font size */
+  transition: border-color 0.3s; /* Transition effect */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #ddaf26; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-button {
+  padding: 10px; /* Inner padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #ddaf26; /* Button color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.submit-button:hover {
+  background-color: #ddaf26; /* Darker blue on hover */
 }
 
 .container{
@@ -372,7 +514,7 @@ z-index: 0;
   flex-direction: column;
 justify-content: center;
 height: 70px;
-background-color: #fed318;
+background-color: #ecebe3;
 
 align-items: center;
 }

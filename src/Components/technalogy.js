@@ -6,7 +6,7 @@ const VideoPlayer = () => {
   useEffect(() => {
     // Optional: Scroll to the video when the component is mounted
     if (videoRef.current) {
-      videoRef.current.scrollIntoView({ behavior: 'smooth' });
+     // videoRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
 
