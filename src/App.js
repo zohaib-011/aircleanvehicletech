@@ -21,6 +21,7 @@ import RefreshHandler from './Components/RefreshHandler';
 import Technalogy from './Components/technalogy';
 import Product from './Components/product';
 import { ContactUs } from './Components/contactUs';
+import Slide1 from './Components/slides/slide1';
 function App() {
   const [isAuthenticated,setAuthenticated]=useState(false);
   const PrivateRouting=({element})=>{
@@ -61,6 +62,9 @@ return isAuthenticated ? element : <Navigate to="/login"/>
           
           <Route exact path="/about" element={ 
          <About/>  
+          } />
+          <Route exact path="/pitch" element={ 
+         <Slide1/>
           } />
            <Route exact path="/product" element={ 
          <Product/>  

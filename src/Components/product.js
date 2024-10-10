@@ -4,7 +4,7 @@ import React from 'react';
 const Product = () => {
     return (
         <div>
-            <h5 style={{fontSize:"50px"}}>Our Product</h5>
+            <h5 style={{fontSize:"50px" ,color:""}}>Our Product</h5>
             <div id='productImgDetail'>
   <img 
     className='productImg'
