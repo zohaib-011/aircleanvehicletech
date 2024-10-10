@@ -22,6 +22,9 @@ import Technalogy from './Components/technalogy';
 import Product from './Components/product';
 import { ContactUs } from './Components/contactUs';
 import Slide1 from './Components/slides/slide1';
+import Article from './Components/article';
+import Slide2 from './Components/slides/slide2';
+import Slide3 from './Components/slides/slide3';
 function App() {
   const [isAuthenticated,setAuthenticated]=useState(false);
   const PrivateRouting=({element})=>{
@@ -64,10 +67,17 @@ return isAuthenticated ? element : <Navigate to="/login"/>
          <About/>  
           } />
           <Route exact path="/pitch" element={ 
+            <div>
          <Slide1/>
+         <Slide2/>
+         <Slide3/>
+         </div>
           } />
            <Route exact path="/product" element={ 
          <Product/>  
+          } />
+           <Route exact path="/article" element={ 
+         <Article/>  
           } />
 
 <Route path='/login' element={<Login/>}/>

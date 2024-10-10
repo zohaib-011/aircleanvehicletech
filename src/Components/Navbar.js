@@ -49,6 +49,9 @@ export class Navbar extends Component {
               <li className="nav-item">
                 <Link className="nav-link" to="/pitch">Pitch</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/article">Article</Link>
+              </li>
             </ul>
             <form className="d-flex" role="search" onSubmit={this.handleFormSubmit}>
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

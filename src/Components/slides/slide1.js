@@ -7,12 +7,15 @@ const Slide1 = () => {
       <div className="text-section">
         <div className="line-and-title">
           <div className="vertical-line"></div>
-          <div className="title-section">
+         
+          <div className="title-section" >
             <h1 className="title-yellow">AIR CLEAN VEHICLE</h1>
             <h1 className="title-green"> TECH</h1>
+            <p className="email">aircleanvehicletech@gmail.com</p>
           </div>
+        
+        
         </div>
-        <p className="email">aircleanvehicletech@gmail.com</p>
       </div>
       <div className="logo-section">
         <div className="logo-wrapper">
