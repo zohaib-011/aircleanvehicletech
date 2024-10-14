@@ -41,6 +41,56 @@ a{
   }
 }
 
+.heroContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.heroItem {
+  position: relative;
+  width: 100%;
+}
+
+/* Unique styles for the welcome text */
+#uniqueWelcomeTextId {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+/* Unique class for the welcome text */
+.uniqueWelcomeText {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Unique ID for the title */
+#welcomeTitle {
+  font-size: 4rem;
+  color: lightblue;
+}
+
+/* Unique class for the company name */
+.companyName {
+  color: #ffcc00; /* Custom color for the company name */
+  font-weight: 700; /* Make the company name bold */
+}
+
+.heroItem img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
 /* ImageSlider.css */
 .slider {
   position: relative;

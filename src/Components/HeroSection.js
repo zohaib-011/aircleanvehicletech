@@ -1,30 +1,24 @@
-import React, { Component } from 'react'
-import App from '../App.css'; 
-import ImageSliderLoader from './imageSliderLoader'
+import React, { Component } from 'react';
+
+import ImageSliderLoader from './imageSliderLoader';
+
 export class Navbar extends Component {
-    render() {
-       return (
-        <div className='heroContainer'>
-<div className='heroItem'>
- <img style={{height:"90vh"}} src="/images/heroImg.jpg"  alt="er" />
- 
-</div>
-<ImageSliderLoader/>
- 
-{/* 
-<div className='heroForm heroItem'>
-    <h4>Registry Requests</h4>
-<form action="" class="heroFormBox">
- <input className='formItem' type="text" />   
- <input className='formItem' type="text" />
- <input className='formItem' type="text" />
- <input className='formItem'  type="text" />
- <button id="submit">Submit</button>
-</form>
-</div> */}
+  render() {
+    return (
+      <div className='heroContainer'>
+        <div className='heroItem' style={{ position: 'relative' }}>
+          <img style={{ height: "90vh", width: "100%" }} src="/images/heroImg.jpg" alt="er" />
+          
+          {/* Absolute positioned welcome text with unique ID and class */}
+          <div className='uniqueWelcomeText' id='uniqueWelcomeTextId'>
+            <h1 id='welcomeTitle'>Welcome to <span className='companyName'>Air Clean Vehicle Tech</span></h1>
+          </div>
         </div>
-    )
-}
+        
+        <ImageSliderLoader />
+      </div>
+    );
+  }
 }
 
 export default Navbar;
