@@ -41,7 +41,7 @@ export class Navbar extends Component {
                 <Link className="nav-link" to="/technalogy">Technology</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact Us</Link>
+                <Link className="nav-link" to="/contact">Our Team</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/faqs">FAQs</Link>

@@ -14,12 +14,12 @@ export class contactItem extends Component {
         
           <div class="dropdown">
   <button style={{backgroundColor:"#ddaf26"}}  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Contact Detail
+    Team Detail
   </button>
   <ul  class="dropdown-menu">
     <li><a class="dropdown-item" href="#">{name}</a></li>
-    <li><a class="dropdown-item" href="#">{phoneNo}</a></li>
-    <li><a class="dropdown-item" href="#">{email}</a></li>
+    {/* <li><a class="dropdown-item" href="#">{phoneNo}</a></li>
+    <li><a class="dropdown-item" href="#">{email}</a></li> */}
   </ul>
    
 </div>
