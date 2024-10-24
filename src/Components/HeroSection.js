@@ -11,7 +11,7 @@ export class Navbar extends Component {
           
           {/* Absolute positioned welcome text with unique ID and class */}
           <div className='uniqueWelcomeText' id='uniqueWelcomeTextId'>
-            <h1 id='welcomeTitle'>Welcome to <span className='companyName'>Air Clean Vehicle Tech</span></h1>
+            <h1 id='welcomeTitle'><h1 id='welcomeTitle'>Welcome to </h1><span className='companyName'>Air Clean Vehicle Tech</span></h1>
           </div>
         </div>
         

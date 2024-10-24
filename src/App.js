@@ -70,7 +70,7 @@ return isAuthenticated ? element : <Navigate to="/login"/>
             <div>
          <Slide1/>
          <Slide2/>
-         <Slide3/>
+         {/* <Slide3/> */}
          </div>
           } />
            <Route exact path="/product" element={ 
