@@ -5,14 +5,15 @@ return (
     <>
      <div className='footHeader'>
            
-         <div id='img'><img id='img' src="/images/logo.png" width={100} alt="" />
+         <div id='img' style={{textAlign:"center"}}><img id='img' src="/images/logo.png" width={100} alt="" />
          <hr id='hr' /></div>
            
         </div>  
      
     
      
-    <div>
+    <div  style={{textAlign:"center"}}>
+      <h4>Our Locarion</h4>
     <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.8839054510627!2d73.90859490909239!3d32.768814884299054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fa10039b8fdc3%3A0xa862640ee6da4f42!2sNASTP%20Kharian%20-%20National%20Aerospace%20Science%20%26%20Technology%20Park!5e0!3m2!1sen!2s!4v1728027829807!5m2!1sen!2s"  height="300"   allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
     </div>

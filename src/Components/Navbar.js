@@ -12,9 +12,11 @@ export class Navbar extends Component {
   render() {
   
     return (
-      <nav  className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav  className="nav navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <img src="/images/logo.png" width={50} alt="Logo" />
+        <div> <img src="/images/logo.png" width={90} alt="Logo" /> 
+        </div> 
+        <div>
           <button 
             className="navbar-toggler" 
             type="button" 
@@ -26,6 +28,7 @@ export class Navbar extends Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -53,10 +56,13 @@ export class Navbar extends Component {
                 <Link className="nav-link" to="/article">Article</Link>
               </li>
             </ul>
+            
+           
             <form className="d-flex" role="search" onSubmit={this.handleFormSubmit}>
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-success" type="submit">Search</button>
             </form>
+            </div>
           </div>
         </div>
       </nav>

@@ -1,5 +1,5 @@
 *{
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -12,6 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 a{
   color: white;
 }
@@ -40,7 +41,14 @@ a{
     transform: rotate(360deg);
   }
 }
-
+.nav{
+  font-size: 30px;
+  display: flex;
+  /* justify-content:space-between ; */
+}
+.nav-item{
+  margin-left: 6px;
+}
 .heroContainer {
   position: relative;
   display: flex;
@@ -306,13 +314,19 @@ textarea:focus {
   background-color: #f7f7f7;
 }
 .container2 {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-content: center;
   padding: 100px 0px; 
-  background-color: #ddaf26;
+  background-color: #ddaf26; */
   gap: 20px;
   flex-wrap: wrap;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2vw;
 }
  
 .containerLoginSignup{
@@ -475,6 +489,13 @@ margin: 0;
    gap: 3vw;
    
   align-items: center;
+
+
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  gap: 2vh;
+  /* padding: 5vh 2vw; */
 }
 .panelBtn{
   
@@ -490,11 +511,23 @@ margin: 0;
   justify-content: space-evenly;
 }
 .reactorMessage .msgItem{
- width:60vw;
+  width: 80vw;
+  max-width: 350px;
+  padding: 2vh;
+  margin: 1vh 0;
+  text-align: center;
+  color: #333;
+  background-color: #f0f0f0;
+  border-radius: 8px;
 }
 #founderTitle{
-  font-weight: bolder;
+  /* font-weight: bolder; */
   background-color: #ddaf26;
+  
+    font-size: 2.5vw;
+    margin-top: 1vh;
+    text-align: center;
+ 
   
 }
 

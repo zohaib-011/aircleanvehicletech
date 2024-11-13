@@ -12,8 +12,9 @@ const VideoPlayer = () => {
 
   return (
     <>
-     
+     <h4 style={{fontSize:"40px",backgroundColor:"#119683" ,textAlign:"center"}}>Our Technalogy</h4>
     <div className="video-wrapper">
+      
         <iframe
           ref={videoRef}
           width="560"
